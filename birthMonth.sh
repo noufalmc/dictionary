@@ -1,9 +1,10 @@
 #!/bin/bash
+
 declare -a month;
 for((i=0;$i<=50;i++))
 do
   echo "Enter Year"
-  read year;
+  read year;    
   random=$(((RANDOM%13)+1))
   if(($year==92 || $year==93))
   then
