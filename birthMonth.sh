@@ -2,11 +2,8 @@
 
 declare -a month;
 for((i=0;$i<=50;i++))
-do
-  echo "Enter Year"
-  read year;    
+do 
   random=$(((RANDOM%13)+1))
-  if(($year==92 || $year==93))
   then
   case $random
   in 1)
@@ -70,7 +67,6 @@ do
      month[12]=$((cou));
      ;;
     esac
-    fi
 done
 echo "arra"${month[@]}
 echo "arra"${!month[@]}
